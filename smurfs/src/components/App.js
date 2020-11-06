@@ -1,14 +1,23 @@
 import React, { Component } from "react";
 import "./App.css";
+import Header from './Header'
+import Smurfs from './Smurfs'
+import Styled from 'styled-components'
+
+
+
+const StyledApp = Styled.div`
+  display: flex;
+  overflow-y: none;
+`
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>SMURFS! W/Redux</h1>
-        <div>Welcome to your state management version of Smurfs!</div>
-        <div>Start inside of your `src/index.js` file!</div>
-        <div>Have fun!</div>
-      </div>
+      <StyledApp>
+        <Header />
+        <Smurfs />
+      </StyledApp>
     );
   }
 }
