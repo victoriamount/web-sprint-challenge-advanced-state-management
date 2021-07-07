@@ -1,3 +1,35 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
+h1, h2, h3, p, button, form {
+  font-family: 'Lilita One', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p, button, form {
+  font-size: 1.5rem;
+}
+
+.button {
+  border: none;
+  text-decoration: none;
+  color:white;
+  background-color: #abd1b5;
+  margin: 5% 0;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
   text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  border-radius: 50px;
+}
+.button:hover{
+  filter: brightness(0.90);
 }
